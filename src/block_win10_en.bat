@@ -34,7 +34,7 @@ wusa.exe /uninstall /kb:3035583 /quiet /norestart
 echo uninstall KB2976978(Compatibility update for Windows 8.1 and Windows 8)...
 wusa.exe /uninstall /kb:2976978 /quiet /norestart
 echo disable the Removed update ...
-start "title" /b /wait cscript.exe "%~dp0HideWindowsUpdates-en.vbs" 2976978 3035583
+start "title" /b /wait cscript.exe "%~dp0HideWindowsUpdates.vbs" 2976978 3035583
 SET /P P=Press enter to go to the main.
 goto _main
 
@@ -48,7 +48,7 @@ wusa.exe /uninstall /kb:2952664 /quiet /norestart
 echo uninstall KB3021917(Technical Preview update)...
 wusa.exe /uninstall /kb:3021917 /quiet /norestart
 echo disable the Removed update ...
-start "title" /b /wait cscript.exe "%~dp0HideWindowsUpdates-en.vbs" 3021917 3035583 2952664
+start "title" /b /wait cscript.exe "%~dp0HideWindowsUpdates.vbs" 3021917 3035583 2952664
 SET /P P=Press enter to go to the main.
 goto _main
 
