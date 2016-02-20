@@ -7,15 +7,15 @@ echo.│win10 upgrade block (win10 block)				│
 echo.│https://github.com/minwook-shin/win10block			│
 echo.│made by : minwook-shin / license : GPL3 			│
 echo.│								│
-echo │         1. windows8					│
+echo │         1. windows8						│
 echo.│								│
-echo │         2. windows7					│
+echo │         2. windows7						│
 echo.│								│
 echo │         3. windowsvista					│
 echo.│								│
 echo │         4. end						│
 echo.│								│
-echo │         5. reboot(recommend)				│
+echo │         5. reboot(recommend)					│
 echo.└───────────────────────────────┘
 echo.
 echo.
