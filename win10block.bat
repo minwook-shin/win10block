@@ -1,31 +1,34 @@
 @echo off
 :_main
 cls
-echo.¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤
-echo.¦¢win10 upgrade block						¦¢
-echo.¦¢https://github.com/minwook-shin/win10block			¦¢
-echo.¦¢made by : minwook-shin / license : GPL3			¦¢
-echo.¦¢								¦¢
-echo ¦¢         1. windows 8 only					¦¢
-echo.¦¢								¦¢
-echo ¦¢         2. windows 7 only					¦¢
-echo.¦¢								¦¢
-echo ¦¢         3. windows vista only				¦¢
-echo.¦¢								¦¢
-echo ¦¢         4. end						¦¢
-echo.¦¢								¦¢
-echo ¦¢         5. reboot(recommend)					¦¢
-echo.¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥
+:: windows10 block main menu
+echo.â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+echo.â”‚win10 upgrade block (win10 block)				â”‚
+echo.â”‚https://github.com/minwook-shin/win10block			â”‚
+echo.â”‚made by : minwook-shin / license : GPL3 			â”‚
+echo.â”‚								â”‚
+echo â”‚         1. windows8					â”‚
+echo.â”‚								â”‚
+echo â”‚         2. windows7					â”‚
+echo.â”‚								â”‚
+echo â”‚         3. windowsvista					â”‚
+echo.â”‚								â”‚
+echo â”‚         4. end						â”‚
+echo.â”‚								â”‚
+echo â”‚         5. reboot(recommend)				â”‚
+echo.â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 echo.
 echo.
+:: select menu
 set /p menu=press number :
 if "%menu%"=="1" goto _8
 if "%menu%"=="2" goto _7
-if "%menu%"=="3" goto _vista
+if "%menu%"=="3" echo none.
 if "%menu%"=="4" goto _end
 if "%menu%"=="5" goto _shutdown
 goto _main
 
+:: windows10 updater disable (windows8,8.1)
 :_8
 echo kill GWX(windows10 upgrade program)...
 TASKKILL /IM GWX.exe /T /F
@@ -38,9 +41,10 @@ start "title" /b /wait cscript.exe "%~dp0HideWindowsUpdates.vbs" 2976978 3035583
 SET /P P=Press enter to go to the main.
 goto _main
 
+:: windows10 updater disable (windows7)
 :_7
 echo kill GWX(windows10 upgrade program)...
-TASKKILL /IM GWX.exe /T /F
+TASKKILL /IM GWX.exe /T /F 
 echo uninstall KB3035583(GWX Update installs Get Windows 10 app in Windows 8.1 and Windows 7 SP1)...
 wusa.exe /uninstall /kb:3035583 /quiet /norestart
 echo uninstall KB2952664(Compatibility update for upgrading Windows 7)...
@@ -52,16 +56,13 @@ start "title" /b /wait cscript.exe "%~dp0HideWindowsUpdates.vbs" 3021917 3035583
 SET /P P=Press enter to go to the main.
 goto _main
 
-:_vista
-echo Windows vista is not applicable.
-SET /P P=Press enter to go to the main.
-goto _main
-
+:: end program
 :_end
 echo The program closes.
 SET /P P=Press enter to end.
 exit
 
+:: shutdown
 :_shutdown
 echo Finish the settings and reboot Windows.
 SET /P P=Press enter to reboot after the program closed.
