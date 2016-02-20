@@ -8,5 +8,4 @@ HideWindowsUpdates.vbs - Colin Bowern
 * http://serverfault.com/a/341318
 
 # how to running program?
-1. unzip win10block.zip
-2. running bat file
+1. running bat file
