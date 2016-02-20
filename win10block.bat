@@ -1,5 +1,6 @@
 :::::::::::::::::::::::::::::::::::::::::::::
 ::win10 upgrade block (win10 block)
+::made by : minwook-shin
 ::https://github.com/minwook-shin/win10block
 ::license : GPL3
 :::::::::::::::::::::::::::::::::::::::::::::
