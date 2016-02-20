@@ -1,3 +1,8 @@
+:::::::::::::::::::::::::::::::::::::::::::::
+::win10 upgrade block (win10 block)
+::https://github.com/minwook-shin/win10block
+::license : GPL3
+:::::::::::::::::::::::::::::::::::::::::::::
 @echo off
 :_main
 cls
