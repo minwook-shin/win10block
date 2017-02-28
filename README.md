@@ -1,11 +1,12 @@
 # win10block
-Removing Windows 10 Updater for Windows 7 and Windows 8
+Removing Windows10 Updater for Windows7/Windows8
 
-#LICENSE 
+#LICENSE
 GPL3
+
 #other quoted source
 HideWindowsUpdates.vbs - Colin Bowern
 * http://serverfault.com/a/341318
 
-# how to running program?
+# how to run program?
 1. running bat file
