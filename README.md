@@ -1,10 +1,10 @@
 # win10block
 Removing Windows10 Updater for Windows7/Windows8
 
-#LICENSE
+# LICENSE
 GPL3
 
-#other quoted source
+# quoted source
 HideWindowsUpdates.vbs - Colin Bowern
 * http://serverfault.com/a/341318
 
