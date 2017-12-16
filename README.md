@@ -17,4 +17,5 @@ This project has been disabled and will not receive any contributions.
 
 ## License
 
-This project is licensed under the GPL3 License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GPL3 License - see the [LICENSE]( 
+LICENSE) file for details
